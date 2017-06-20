@@ -181,6 +181,9 @@ import UIKit
         label.font = font
         label.backgroundColor = UIColor.clear
         label.textAlignment = .center
+        label.layer.borderColor = UIColor.gray.cgColor
+        label.layer.borderWidth = 1
+        label.layer.cornerRadius = 2
         return label
     }
     
