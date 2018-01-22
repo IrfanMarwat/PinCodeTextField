@@ -38,7 +38,7 @@ extension ViewController: PinCodeTextFieldDelegate {
     }
     
     func textFieldValueChanged(_ textField: PinCodeTextField) {
-        print("value changed: \(textField.text)")
+        print("value changed: \(String(describing: textField.text))")
     }
     
     func textFieldShouldEndEditing(_ textField: PinCodeTextField) -> Bool {
