@@ -16,7 +16,6 @@
 		B5EFAB6C1E7A7C6D00AE87FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EFAB641E7A7C6D00AE87FA /* Assets.xcassets */; };
 		B5EFAB6D1E7A7C6D00AE87FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EFAB651E7A7C6D00AE87FA /* LaunchScreen.storyboard */; };
 		B5EFAB6E1E7A7C6D00AE87FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EFAB671E7A7C6D00AE87FA /* Main.storyboard */; };
-		B5EFAB6F1E7A7C6D00AE87FA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5EFAB691E7A7C6D00AE87FA /* Info.plist */; };
 		B5EFAB701E7A7C6D00AE87FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EFAB6A1E7A7C6D00AE87FA /* ViewController.swift */; };
 		B5F0842B1E7996A70058D4A2 /* PinCodeTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0842A1E7996A70058D4A2 /* PinCodeTextFieldTests.swift */; };
 /* End PBXBuildFile section */
@@ -197,16 +196,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = organization;
 				TargetAttributes = {
 					B5F084111E7996A70058D4A2 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = W85VJR9GUS;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					B5F084251E7996A70058D4A2 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = W85VJR9GUS;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B5F084111E7996A70058D4A2;
@@ -240,7 +241,6 @@
 				B5EFAB6C1E7A7C6D00AE87FA /* Assets.xcassets in Resources */,
 				B5EFAB6E1E7A7C6D00AE87FA /* Main.storyboard in Resources */,
 				B5EFAB6D1E7A7C6D00AE87FA /* LaunchScreen.storyboard in Resources */,
-				B5EFAB6F1E7A7C6D00AE87FA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,15 +315,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -365,15 +373,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -403,11 +419,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W85VJR9GUS;
 				INFOPLIST_FILE = PinCodeTextFieldExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = organization.PinCodeTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -416,11 +433,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W85VJR9GUS;
 				INFOPLIST_FILE = PinCodeTextFieldExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = organization.PinCodeTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -430,6 +448,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W85VJR9GUS;
 				INFOPLIST_FILE = PinCodeTextFieldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = organization.PinCodeTextFieldTests;
@@ -445,6 +464,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W85VJR9GUS;
 				INFOPLIST_FILE = PinCodeTextFieldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = organization.PinCodeTextFieldTests;
